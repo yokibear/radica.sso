@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Spring Boot Thymeleaf Example</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+
+	<div class="container">
+		
+		<div>
+			<h2>User details</h2>
+			<form class="form-horizontal">
+			<div class="" >
+				<table>
+					<tr>
+						<td>First name: </td>
+						<td><p class="form-control-static" th:text="${user.firstName}">firstName</p></td>
+					</tr>
+					<tr>
+						<td>Last name: </td>
+						<td><p class="form-control-static" th:text="${user.lastName}">lastName</p></td>
+					</tr>
+					<tr>
+						<td>Email: </td>
+						<td><p class="form-control-static" th:text="${user.email}">email</p></td>
+					</tr>
+		      	</table>
+			</div>
+			</form>
+		</div>
+		
+	</div>
+</body>
+</html>
